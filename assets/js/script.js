@@ -32,7 +32,7 @@ function userInput(event) {
 
   selectElement.selectedIndex = 0;
 
-  const longLatURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API}&units=metric`;
+  const longLatURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API}&units=metric`;
 
   fetch(longLatURL)
     .then((response) => {
